@@ -28,3 +28,23 @@ t = ('a', 'a', 'b')
 print(t.count('a'))
 print(t.index('a'))
 print(set([1,1,2,3]))
+
+numeros = [(1,2,3)]
+winner_combinations = [(1,2,3), (4,5,6), (7,8,9), (1,4,7), (2,5,8), (3,6,9), (1,5,9), (3,5,7)]
+
+result =  all(elem in winner_combinations for elem in numeros)
+print(result)
+print('---------------------\n')
+
+# List of string 
+list1 = ['Hi' ,  'hello', 'at', 'this', 'there', 'from']
+# List of string
+list2 = ['there' , 'hello', 'Hi']
+'''    
+check if list1 contains all elements in list2
+'''
+result =  all(elem in list1  for elem in list2)
+if result:
+    print("Yes, list1 contains all elements in list2")    
+else :
+    print("No, list1 does not contains all elements in list2")
